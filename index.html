@@ -2,14 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Ensures responsiveness across devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Basic CSS for a fluid grid and media queries -->
   <style>
+    /* Fluid container */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #f2f2f2;
+    }
+
+    /* Fluid Grid for responsive images */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Mobile-first: single column */
+    @media (min-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Media query example */
+    @media (min-width: 768px) {
+      .content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Example of responsive nav */
+    @media (max-width: 576px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -19,5 +78,10 @@
     <a href="./bootstrap.html">Bootstrap</a>
     <a href="./tailwind.html">Tailwind</a>
   </nav>
+
+  <div class="attribution">
+    Challenge by <a href="https://github.com/DSAW-2025-I/tailwind-bootstrap-Kapum357" target="_blank" rel="noopener">Web</a>.
+    Coded by <a href="https://github.com/Kapum357">Krish Purmessur :p</a>.
+  </div>
 </body>
 </html>
