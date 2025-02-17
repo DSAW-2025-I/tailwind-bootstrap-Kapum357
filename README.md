@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://dsaw-2025-i.github.io/tailwind-bootstrap-Kapum357/)
 
 ## Rúbrica de evaluación
 
