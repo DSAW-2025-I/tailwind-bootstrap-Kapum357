@@ -9,9 +9,7 @@
 
   <title>Krish Purmessur</title>
 
-  <!-- Basic CSS for a fluid grid and media queries -->
   <style>
-    /* Fluid container */
     body {
       margin: 0;
       font-family: sans-serif;
@@ -19,48 +17,12 @@
       flex-direction: column;
       min-height: 100vh;
     }
-
     nav {
       display: flex;
       gap: 1rem;
       padding: 1rem;
       background-color: #f2f2f2;
     }
-
-    /* Fluid Grid for responsive images */
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      padding: 1rem;
-    }
-
-    .grid-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* Mobile-first: single column */
-    @media (min-width: 768px) {
-      .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    /* Media query example */
-    @media (min-width: 768px) {
-      .content {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
     /* Example of responsive nav */
     @media (max-width: 576px) {
       nav {
